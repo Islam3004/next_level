@@ -310,14 +310,14 @@ ul.btn li:last-child {
 
 .navigation.navbar-dark .navbar-nav .nav-link:focus,
 .navigation.navbar-dark .navbar-nav .nav-link:hover {
-     color:red;
+     color:white;
 }
 
 .navigation.navbar-dark .navbar-nav .active>.nav-link,
 .navigation.navbar-dark .navbar-nav .nav-link.active,
 .navigation.navbar-dark .navbar-nav .nav-link.show,
 .navigation.navbar-dark .navbar-nav .show>.nav-link {
-     color:red;
+     color:white;
 }
 
 .navbar-expand-md .navbar-nav {
@@ -346,7 +346,7 @@ ul.btn li:last-child {
 /** banner section **/
 
 .banner_main {
-     background: url(../images/banner.jpg);
+     background: url(../images/next1.jpg);
      background-repeat: no-repeat;
      min-height: 700px;
      background-size: 100% 100%;
@@ -381,8 +381,9 @@ ul.btn li:last-child {
 }
 
 .text-bg p {
+     color: #f8e703;
      line-height: 28px;
-     font-weight: 500;
+     font-weight: 1000;
      padding-bottom: 20px;
      display: block;
 }
@@ -497,7 +498,7 @@ ul.btn li:last-child {
 
 .read_more {
      font-size: 17px;
-     background-color: #141629;
+     background-color: black;
      color: #fff !important;
      padding: 13px 0px;
      width: 100%;
@@ -545,7 +546,17 @@ ul.btn li:last-child {
      display: block;
 }
 
+#img1 {  
+     filter: brightness(0) saturate(100%) invert(77%) sepia(99%) saturate(552%) hue-rotate(5deg) brightness(98%) contrast(90%);
+}
 
+#img2 {
+     filter: brightness(0) saturate(100%);
+}
+
+#img3 {  
+     filter: brightness(0) saturate(100%) invert(77%) sepia(99%) saturate(552%) hue-rotate(5deg) brightness(98%) contrast(90%);
+}
 /** end three_box section **/
 
 
@@ -601,7 +612,7 @@ ul.btn li:last-child {
 }
 
 .wedo .titlepage p {
-     color: #141629;
+     color: black;
      display: block;
      font-size: 17px;
      font-weight: bold;
@@ -679,7 +690,7 @@ ul.btn li:last-child {
 }
 
 .testimonial .titlepage p {
-     color: #141629;
+     color: black;
      line-height: 28px;
      font-weight: 500;
      font-size: 17px;
@@ -697,7 +708,7 @@ ul.btn li:last-child {
 
 .test_box {
      padding: 40px 25px;
-     background: #141629;
+     background: black;
 }
 
 .testimonial_Carousel .test_box h4 {
@@ -744,7 +755,7 @@ ul.btn li:last-child {
      width: 18px;
      height: 18px;
      border-radius: 20px;
-     background: #0556c4;
+     background: black;
 }
 
 .testimonial_Carousel .carousel-indicators li.active {
@@ -764,11 +775,13 @@ ul.btn li:last-child {
 
 .footer {
      padding-bottom: 80px;
-     background: #141629;
+     background: black;
      padding-top: 85px;
      text-align: center;
 }
-
+.footer .row{
+     justify-content: space-between;
+}
 .footer .titlepage {
      text-align: left;
      padding-bottom: 0px;
@@ -782,6 +795,10 @@ ul.btn li:last-child {
 
 ul.location_icon {
      padding-top: 12px;
+     display:flex;
+     flex-direction: column;
+     align-items: start;
+     gap: 15px;
 }
 
 ul.location_icon li {
@@ -892,7 +909,9 @@ ul.social_icon li a:hover {
 
 .map figure img {
      width: 100%;
+     filter: brightness(0) invert(1);
 }
+
 
 .bottom_form h3 {
      font-weight: 600;
@@ -913,6 +932,35 @@ ul.social_icon li a:hover {
      font-weight: 600;
      float: left;
 }
+
+.biography {
+     padding: 50px;
+     background: #fff;
+     color: #333;
+}
+.biography .container {
+     margin-left: auto;
+     margin-right: auto;
+     color: var(--neutral--600);
+     font-family: Claritycity,sans-serif;
+     font-size: 18px;
+     font-weight: 400;
+     line-height: 1.667em;
+     max-width: 1000px;
+     margin: 0 auto;
+}
+ .about-section h1 {
+     text-align: center;
+     margin-bottom: 20px;
+     font-size: 2.5em;
+     color: #333;
+}
+ .about-section p {
+     text-align: center;
+     font-size: 1.1em;
+     margin-bottom: 20px;
+}
+
 
 .sub_btn {
      font-size: 17px;
