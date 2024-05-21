@@ -73,7 +73,7 @@
         display: none;
     }
     .about .about_box {
-        padding: 95px 91px 30px 91px;
+        width: 90%;
     }
     .about .about_box p {
         font-size: 15px;
@@ -139,6 +139,9 @@
     .margin_boot {
         margin-bottom: 20px;
     }
+    .titlepage{
+        padding-bottom: 35px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 1200px) {
@@ -162,9 +165,11 @@
         padding: 10px 0;
         color: #fff;
     }
-    .navigation.navbar-dark .navbar-nav .nav-link:focus,
-    .navigation.navbar-dark .navbar-nav .nav-link:hover {
-        color: #51fe44;
+    @media (hover: hover)  {
+        .navigation.navbar-dark .navbar-nav .nav-link:focus,
+        .navigation.navbar-dark .navbar-nav .nav-link:hover {
+            color: #51fe44;
+        }
     }
     .navigation.navbar-dark .navbar-toggler {
         border: inherit;
@@ -245,11 +250,9 @@
         width: 100%;
         margin-bottom: 30px;
     }
-    .about .about_img {
-        background: inherit;
-    }
     .about .about_box {
-        padding: 0px 0px 30px 0px;
+        width: 95%;
+        padding: 15px;
     }
     .about_box {
         padding-top: 0;
@@ -276,9 +279,11 @@
         padding: 10px 0;
         color: #fff;
     }
-    .navigation.navbar-dark .navbar-nav .nav-link:focus,
-    .navigation.navbar-dark .navbar-nav .nav-link:hover {
-        color: red;
+    @media (hover: hover){
+        .navigation.navbar-dark .navbar-nav .nav-link:focus,
+        .navigation.navbar-dark .navbar-nav .nav-link:hover {
+            color: red;
+        }
     }
     .navigation.navbar-dark .navbar-toggler {
         float: right;
@@ -293,6 +298,21 @@
         background: url(../images/menu_icon.png);
         background-repeat: no-repeat;
     }
+    .titlepage{
+        padding-bottom: 25px;
+    }
+}
+
+@media (max-width: 530px) {
+    .about .about_box h3 {
+        font-size: 19px;
+    }
+    .about .about_box p{
+        font-size: 15px;
+    }
+    #about .read_more{
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 485px) {
@@ -304,6 +324,23 @@
         font-size: 20px;
     }
 }
+
+@media (max-width: 445px) {
+    #about .container{
+        margin: 0;
+        padding: 0;
+    }
+    #about .row{
+        margin: 0px 0px;
+    }
+    #about .row .col-md-10.offset-md-1{
+        padding: 10px 0px !important;
+    }
+    .about .about_box {
+        padding: 15px 25px;
+    }
+}
+
 @media (max-width: 405px) {
     .logo a p{
         font-size: 16px;
@@ -344,6 +381,17 @@
 @media (max-width: 340px) {
     .brands{
         width: 150px;
+    }
+    .about .about_box h3 {
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .about .about_box p{
+        font-size: 13px;
+        line-height: 22px;
+    }
+    #about .read_more{
+        font-size: 13px;
     }
 }
 

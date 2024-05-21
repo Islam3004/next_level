@@ -18,6 +18,12 @@ $(function () {
 	
 	$(document).ready(function(){
 		$('[data-toggle="tooltip"]').tooltip();
+		if ('ontouchstart' in document.documentElement) {
+			const elems = document.getElementsByClassName('work_text')
+			for(let item of elems){
+				item.style.opacity="1"
+			}
+		}
 	});
 	
 	
